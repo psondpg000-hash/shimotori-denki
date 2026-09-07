@@ -1,0 +1,207 @@
+/* =========================
+   Works Page
+========================= */
+
+/* .works-page-title {
+	background: #1c2331;
+	color: #fff;
+	text-align: center;
+	padding: 100px 20px;
+} */
+
+.works-page-title {
+	position: relative;
+
+	background: #1c2331;
+	color: #fff;
+	text-align: center;
+	padding: 100px 20px;
+}
+
+.works-page-title h1 {
+	margin: 0;
+	font-size: 3rem;
+	letter-spacing: 4px;
+}
+
+.works-page-title p {
+	margin: 12px 0 0;
+	color: #d5d5d5;
+}
+
+
+/* =========================
+   Works Section
+========================= */
+
+.works-section {
+	padding: 90px 0;
+	background: #fafafa;
+}
+
+.works-container {
+	width: min(1100px, 90%);
+	margin: 0 auto;
+}
+
+.works-intro {
+	max-width: 700px;
+	margin: 0 auto 70px;
+	text-align: center;
+	line-height: 2;
+	color: #555;
+}
+
+
+/* =========================
+   Works Grid
+========================= */
+
+.works-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px 35px;
+}
+
+
+/* =========================
+   Works Card
+========================= */
+
+.works-card {
+	background: #fff;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.works-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Image
+========================= */
+
+.works-image {
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	overflow: hidden;
+	background: #eee;
+}
+
+.works-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	transition: transform 0.5s ease;
+}
+
+.works-card:hover .works-image img {
+	transform: scale(1.04);
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.works-content {
+	position: relative;
+	padding: 30px;
+}
+
+.works-number {
+	display: block;
+	margin-bottom: 8px;
+
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #999;
+}
+
+.works-content h2 {
+	margin: 0 0 15px;
+
+	font-size: 1.4rem;
+	color: #222;
+}
+
+.works-content p {
+	margin: 0;
+
+	line-height: 1.8;
+	color: #666;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+	.works-page-title {
+		padding: 70px 20px;
+	}
+
+	.works-page-title h1 {
+		font-size: 2.2rem;
+	}
+
+	.works-section {
+		padding: 60px 0;
+	}
+
+	.works-intro {
+		margin-bottom: 50px;
+	}
+
+	.works-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.works-content {
+		padding: 25px;
+	}
+
+}
+
+/* パンくず */
+.works-breadcrumb {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 0.85rem;
+	color: #aaa;
+}
+
+.works-breadcrumb a {
+	color: #aaa;
+	text-decoration: none;
+
+	transition: color 0.3s ease;
+}
+
+.works-breadcrumb a:hover {
+	color: #fff;
+}
+
+.works-breadcrumb span:last-child {
+	color: #fff;
+}

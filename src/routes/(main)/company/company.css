@@ -1,0 +1,178 @@
+/* =========================
+   Company Page
+========================= */
+
+/* .company-page-title {
+	background: #1c2331;
+	color: #fff;
+	text-align: center;
+	padding: 100px 20px;
+} */
+
+.company-page-title {
+	position: relative;
+
+	background: #1c2331;
+	color: #fff;
+	text-align: center;
+	padding: 100px 20px;
+}
+
+.company-page-title h1 {
+	margin: 0;
+	font-size: 3rem;
+	letter-spacing: 4px;
+}
+
+.company-page-title p {
+	margin: 12px 0 0;
+	color: #d5d5d5;
+}
+
+
+/* =========================
+   Company Information
+========================= */
+
+.company-info {
+	padding: 80px 0;
+	background: #fafafa;
+}
+
+.company-container {
+	width: min(1000px, 90%);
+	margin: 0 auto;
+}
+
+.company-card {
+	background: #fff;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.company-item {
+	display: grid;
+	grid-template-columns: 220px 1fr;
+	border-bottom: 1px solid #ececec;
+}
+
+.company-item:last-child {
+	border-bottom: none;
+}
+
+.company-label {
+	background: #f4f6f8;
+	font-weight: bold;
+	padding: 24px;
+}
+
+.company-content {
+	padding: 24px;
+	line-height: 1.8;
+}
+
+.company-content a {
+	color: #1565c0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.company-content ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+
+/* =========================
+   Access
+========================= */
+
+.company-access {
+	padding: 80px 0;
+	background: #fff;
+}
+
+.company-access-title {
+	margin: 0 0 40px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.company-map {
+	overflow: hidden;
+	border-radius: 18px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.company-map iframe {
+	display: block;
+	width: 100%;
+	height: 500px;
+	border: 0;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+	.company-page-title {
+		padding: 70px 20px;
+	}
+
+	.company-page-title h1 {
+		font-size: 2.2rem;
+	}
+
+	.company-item {
+		grid-template-columns: 1fr;
+	}
+
+	.company-label {
+		padding: 15px 20px;
+	}
+
+	.company-content {
+		padding: 20px;
+	}
+
+	.company-info,
+	.company-access {
+		padding: 60px 0;
+	}
+
+	.company-map iframe {
+		height: 350px;
+	}
+}
+
+/* パンくず */
+.company-breadcrumb {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 0.85rem;
+	color: #aaa;
+}
+
+.company-breadcrumb a {
+	color: #aaa;
+	text-decoration: none;
+
+	transition: color 0.3s ease;
+}
+
+.company-breadcrumb a:hover {
+	color: #fff;
+}
+
+.company-breadcrumb span:last-child {
+	color: #fff;
+}
