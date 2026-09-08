@@ -16,7 +16,7 @@
 			"@type": "Electrician",
 			"name": "株式会社シモトリ電気",
 			"url": "https://example.com",
-			"telephone": "0255-78-7500",
+			"telephone": "0255-82-3670",
 			"address": {
 				"@type": "PostalAddress",
 				"addressRegion": "新潟県",
@@ -93,7 +93,7 @@
 
 				<div class="company-content">
 					<a href="tel:09012345678">
-						0255-78-7500
+						0255-82-3670
 					</a>
 				</div>
 			</div>
