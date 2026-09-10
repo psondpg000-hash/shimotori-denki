@@ -15,7 +15,7 @@
 			"@context": "https://schema.org",
 			"@type": "Electrician",
 			"name": "株式会社シモトリ電気",
-			"url": "https://example.com",
+			"url": "https://shimotori-denki.psondpg000.workers.dev/",
 			"telephone": "0255-78-7500",
 			"address": {
 				"@type": "PostalAddress",
